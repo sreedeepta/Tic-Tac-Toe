@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:500');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #A53860;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+#toggleAI {
+  position: absolute;
+  top: 55px;
+  left: 15px;
+  font-size: 35px;
+  color: #FFEEDB;
+  opacity: 0.5;
+}
+
+#toggleAI:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.container {
+  overflow: hidden;
+  /*height: 80px;*/
+  background-color: #FFEEDB;
+  opacity: 0.5;
+}
+
+.container a {
+  float: right;
+  font-size: 16px;
+  color: #49074C;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#newgame {
+  background-color: #61C9A8;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+  /*position: relative;*/
+  z-index: 9999;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #49074C;
+  padding: 14px 16px;
+  background-color: inherit;
+  height: 47px;
+  cursor: pointer;
+}
+
+.container a:hover, .dropdown:hover .dropbtn {
+  background-color: #49074C;
+  color: #FFEEDB;
+}
+
+.dropdown-content {
+  /*visibility: hidden;*/
+  display: none;
+  margin: 0;
+  position: absolute;
+  /*top: 40px;*/
+  background-color: #FFEEDB;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 9999999999;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #49074C;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  z-index: 9999999999;
+}
+
+.dropdown-content a:hover {
+  background-color: #61C9A8;
+}
+
+.dropdown:hover .dropdown-content {
+  /*visibility: visible;*/
+  display: block;
+  z-index: 100;
+}
+
+h1 {
+  margin-top: 10px;
+  position: absolute;
+  color: #61C9A8;
+  float: left;
+  font-size: 25px;
+  left: 80px;
+  text-transform: uppercase;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  cursor: pointer;
+  clear: both;
+}
+
+td {
+  width: 150px;
+  height: 150px;
+  font-size: 120px;
+}
+
+.bottom {
+  border-bottom: 6px solid #49074C;
+}
+
+.right {
+  border-right: 6px solid #49074C;
+}
+
+/*below are 2 pairs of tokens*/
+
+.x::after {
+  content: "x";
+  color: #ADA8B6;
+}
+
+.o::after {
+  content: "o";
+  color: #FFEEDB;
+}
+
+.nigiri {
+  background-image: url("../images/nigiri.png");
+  background-size: contain;
+}
+
+.onigiri {
+  background-image: url("../images/onigiri.png");
+  background-size: contain;
+}
+/*
+#killme{
+  z-index: 0 !important;
+}*/
+
+#message {
+  font-size: 20px;
+  color: #FFEEDB;
+  margin-top: 10px;
+  z-index: 0 !important;
+}
+
+.scores {
+  width: 300px;
+  margin: auto;
+}
+
+#player1 {
+  float: left;
+  display: inline-block;
+}
+
+#player2 {
+  display: inline-block;
+  float: right;
+}
+
+.scores p {
+  font-size: 20px;
+  color: #FFEEDB;
+}
+
+.scores .num {
+  position: relative;
+  font-size: 30px;
+  top: -20px;
+}
+
+.selected {
+  background-color: #ADA8B6;
+}
+
+#restart {
+  background-color: #49074C;
+  border: none;
+  color: #FFEEDB;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  position: relative;
+  top: 100px;
+}
+
+#restart:hover {
+  background-color: #FFEEDB;
+  color: #49074C;
+}
+
+
+/*.changecolor {
+  color: #FFEEDB;
+}*/
